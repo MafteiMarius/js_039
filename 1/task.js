@@ -1,13 +1,16 @@
 //write a function that returns the sum of 3 numbers
-function sum (a, b, c) {
-
-    if (typeof a === "string" || typeof b === "string" || typeof c === "string") {
-        console.log ("Please input number");
-        return;
-    } 
-    const sum = a+b+c;
-    return sum;
+function sumOfThreeNumbers(num1, num2, num3) {
+  if (
+    typeof num1 === "string" ||
+    typeof num2 === "string" ||
+    typeof num3 === "string"
+  ) {
+    console.log("please input numbers");
+    return;
+  }
+  return num1 + num2 + num3;
 }
 
-console.log (sum(1, 2, "3"));
-
+// Example usage:
+let result = sumOfThreeNumbers(2, 5, 7);
+console.log(result); // Output: 14
